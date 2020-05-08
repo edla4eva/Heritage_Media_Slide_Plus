@@ -1,0 +1,106 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+HeriageMediaSlidePlus
+</name>
+</assembly>
+<members>
+<member name="M:HeriageMediaSlidePlus.ClassSlide.searchForBiblePassagesWithRef(System.String,System.String,System.String,System.String)">
+	<summary> searches for text and returns full scrpture with ref and  verse as string()</summary>
+</member><member name="M:HeriageMediaSlidePlus.ClassSlide.getBiblePassagesWithRef(System.String,System.String,System.String)">
+	<summary> reurns full scrpture with ref and  verse as string()</summary>
+</member><member name="M:HeriageMediaSlidePlus.ClassSlide.getBiblePassages(System.String,System.String,System.String)">
+	<summary> reurns full scrpture with ref and  verse as string()</summary>
+</member><member name="M:HeriageMediaSlidePlus.ClassSlide.getBiblePassages2DArray(System.String,System.String,System.String)">
+	<summary> reurns full scrpture with ref and  verse as string in a 2D array()</summary>
+</member><member name="M:HeriageMediaSlidePlus.ClassHeritageGraphics.drawTextOnSlide(System.Object,System.String,System.Drawing.Font,System.Drawing.Color,System.Drawing.Color,System.String,System.Drawing.Color,System.Boolean,System.Int32,System.Int32)">
+	<summary>draws Text On Slidebackground Image and reurns d Image .</summary>
+	<param name="e">Object from a paint event </param>
+</member><member name="M:HeriageMediaSlidePlus.ClassHeritageGraphics.drawTextOnSlideLowerThird(System.Object,System.String,System.Drawing.Font,System.Drawing.Color,System.Drawing.Color,System.String,System.Drawing.Color,System.Boolean,System.Int32,System.Int32,System.Boolean,System.Boolean)">
+	<summary>draws Text On Slidebackground Image and reurns d Image .</summary>
+	<param name="e">Object from a paint event </param>
+	<param name="bkgrndColor">backgroun color of lower third portion </param>
+	<param name="foreColor">Text fore color, also used for border of lower thid box </param>
+	<param name="textBackground">If true, a dark blueish semi transparent color is used for text background fit box </param>
+	<param name="lowerThirdBorder">if true, filled box is drawn in lower third portion </param>
+</member><member name="M:HeriageMediaSlidePlus.ClassHeritageGraphics.drawTextOnSlideLowerThirdGRAPH(System.Object,System.String,System.Drawing.Font,System.Drawing.Color,System.Drawing.Color,System.String,System.Drawing.Color,System.Boolean,System.Int32,System.Int32,System.Boolean,System.Boolean)">
+	<summary>draws Text On Slidebackground Image and reurns d Image .</summary>
+	<param name="e">Object from a paint event </param>
+	<param name="bkgrndColor">backgroun color of lower third portion </param>
+	<param name="foreColor">Text fore color, also used for border of lower thid box </param>
+	<param name="textBackground">If true, a dark blueish semi transparent color is used for text background fit box </param>
+	<param name="lowerThirdBorder">if true, filled box is drawn in lower third portion </param>
+</member><member name="M:HeriageMediaSlidePlus.FormFonts.LoadPrivateFonts(System.Collections.Generic.IEnumerable{System.Byte[]})">
+	<summary>Loads the private fonts.</summary>
+	<param name="fonts">The fonts to be loaded into the private font collection.</param>
+</member><member name="M:HeriageMediaSlidePlus.FormFonts.GetFontFamily(System.String,System.Drawing.FontFamily)">
+	<summary>Gets the FontFamily whose name matches the one specified.</summary>
+	<param name="fontName">Name of the FontFamily to be returned.</param>
+	<param name="defaultFamily">
+ Optional. The default font family to be returned if the specified font is not found
+ </param>
+</member><member name="P:HeriageMediaSlidePlus.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:HeriageMediaSlidePlus.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:HeriageMediaSlidePlus.My.Resources.Resources.AndroidClock">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HeriageMediaSlidePlus.My.Resources.Resources.CarroisGothicSC_Regular">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HeriageMediaSlidePlus.My.Resources.Resources.ComingSoon">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HeriageMediaSlidePlus.My.Resources.Resources.CutiveMono">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HeriageMediaSlidePlus.My.Resources.Resources.DancingScript_Bold">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HeriageMediaSlidePlus.My.Resources.Resources.DancingScript_Regular">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HeriageMediaSlidePlus.My.Resources.Resources.DroidSans">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HeriageMediaSlidePlus.My.Resources.Resources.DroidSans_Bold">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HeriageMediaSlidePlus.My.Resources.Resources.DroidSansFallback">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HeriageMediaSlidePlus.My.Resources.Resources.DroidSansMono">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HeriageMediaSlidePlus.My.Resources.Resources.grain">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HeriageMediaSlidePlus.My.Resources.Resources.tree1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:HeriageMediaSlidePlus.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
