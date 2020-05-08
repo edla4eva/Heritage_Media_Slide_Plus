@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HeriageMediaSlidePlus", "HeriageMediaSlidePlus\HeriageMediaSlidePlus.vbproj", "{7D2A59AF-AFA9-4E54-B79F-3DDFA0D9AB64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeriageMediaWinHelper", "HeriageMediaWinHelper\HeriageMediaWinHelper.csproj", "{5D36B502-16C3-4294-862B-14318F945DB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeritageMediaClassLibrary", "HeritageMediaClassLibrary\HeritageMediaClassLibrary.csproj", "{903EF740-58DF-4AB2-8F15-003FB04CAE22}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.vbproj", "{E7431B8A-DF0F-49E3-B2CE-BC2669E32434}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HeritageUserControl", "HeritageUserControl\HeritageUserControl.vbproj", "{3F4FDCB6-44E7-4181-9B56-C9AFB51617A3}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HeritageMediaSlidePlusWPF", "HeritageMediaSlidePlusWPF\HeritageMediaSlidePlusWPF.vbproj", "{50622533-7767-4235-877F-052BE359ECEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D2A59AF-AFA9-4E54-B79F-3DDFA0D9AB64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D2A59AF-AFA9-4E54-B79F-3DDFA0D9AB64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D2A59AF-AFA9-4E54-B79F-3DDFA0D9AB64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D2A59AF-AFA9-4E54-B79F-3DDFA0D9AB64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D36B502-16C3-4294-862B-14318F945DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D36B502-16C3-4294-862B-14318F945DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D36B502-16C3-4294-862B-14318F945DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D36B502-16C3-4294-862B-14318F945DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{903EF740-58DF-4AB2-8F15-003FB04CAE22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903EF740-58DF-4AB2-8F15-003FB04CAE22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903EF740-58DF-4AB2-8F15-003FB04CAE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903EF740-58DF-4AB2-8F15-003FB04CAE22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7431B8A-DF0F-49E3-B2CE-BC2669E32434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7431B8A-DF0F-49E3-B2CE-BC2669E32434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7431B8A-DF0F-49E3-B2CE-BC2669E32434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7431B8A-DF0F-49E3-B2CE-BC2669E32434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F4FDCB6-44E7-4181-9B56-C9AFB51617A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F4FDCB6-44E7-4181-9B56-C9AFB51617A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F4FDCB6-44E7-4181-9B56-C9AFB51617A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F4FDCB6-44E7-4181-9B56-C9AFB51617A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50622533-7767-4235-877F-052BE359ECEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50622533-7767-4235-877F-052BE359ECEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50622533-7767-4235-877F-052BE359ECEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50622533-7767-4235-877F-052BE359ECEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

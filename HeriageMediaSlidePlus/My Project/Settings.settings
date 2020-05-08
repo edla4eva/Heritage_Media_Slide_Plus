@@ -1,0 +1,60 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="mode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">driver</Value>
+    </Setting>
+    <Setting Name="fontSize" Type="System.String" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="fontFamily" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Arial</Value>
+    </Setting>
+    <Setting Name="max_Char" Type="System.String" Scope="User">
+      <Value Profile="(Default)">160</Value>
+    </Setting>
+    <Setting Name="charPerLine" Type="System.String" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="maxLine" Type="System.String" Scope="User">
+      <Value Profile="(Default)">7</Value>
+    </Setting>
+    <Setting Name="foreColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-256</Value>
+    </Setting>
+    <Setting Name="shadowColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-16777216</Value>
+    </Setting>
+    <Setting Name="backgroundImage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">HD-01.jpg</Value>
+    </Setting>
+    <Setting Name="ResolutionW" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1366</Value>
+    </Setting>
+    <Setting Name="ResolutionH" Type="System.String" Scope="User">
+      <Value Profile="(Default)">768</Value>
+    </Setting>
+    <Setting Name="ip" Type="System.String" Scope="User">
+      <Value Profile="(Default)">127.0.0.1</Value>
+    </Setting>
+    <Setting Name="position" Type="System.String" Scope="User">
+      <Value Profile="(Default)">full</Value>
+    </Setting>
+    <Setting Name="font" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Arial, 50.25pt, style=Bold</Value>
+    </Setting>
+    <Setting Name="color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">255, 192, 128</Value>
+    </Setting>
+    <Setting Name="resolutionProjectorW" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1724</Value>
+    </Setting>
+    <Setting Name="resolutionProjectorH" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1293</Value>
+    </Setting>
+    <Setting Name="displayOption" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D2A59AF-AFA9-4E54-B79F-3DDFA0D9AB64}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>HeriageMediaSlidePlus.My.MyApplication</StartupObject>
+    <RootNamespace>HeriageMediaSlidePlus</RootNamespace>
+    <AssemblyName>HeriageMediaSlidePlus</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>HeriageMediaSlidePlus.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>HeriageMediaSlidePlus.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HeritageMediaClassLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HeritageMediaClassLibrary\bin\Debug\HeritageMediaClassLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="RapChatLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\RapChatLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassAnswerEventArgs.vb" />
+    <Compile Include="ClassFont.vb" />
+    <Compile Include="ClassHeritageGraphics.vb" />
+    <Compile Include="ClassSerializer.vb" />
+    <Compile Include="ClassSlide.vb" />
+    <Compile Include="FormBibleScriptureSelector.Designer.vb">
+      <DependentUpon>FormBibleScriptureSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBibleScriptureSelector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLayouts.Designer.vb">
+      <DependentUpon>FormLayouts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLayouts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLiveMock.Designer.vb">
+      <DependentUpon>FormLiveMock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLiveMock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDraw.Designer.vb">
+      <DependentUpon>FormDraw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDraw.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditor.designer.vb">
+      <DependentUpon>FormEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFonts.Designer.vb">
+      <DependentUpon>FormFonts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormFonts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLive.Designer.vb">
+      <DependentUpon>FormLive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWelcomeSplash.Designer.vb">
+      <DependentUpon>FormWelcomeSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormWelcomeSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParentMain.Designer.vb">
+      <DependentUpon>MDIParentMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParentMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleEvents.vb" />
+    <Compile Include="ModuleMain.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBibleScriptureSelector.resx">
+      <DependentUpon>FormBibleScriptureSelector.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLayouts.resx">
+      <DependentUpon>FormLayouts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLiveMock.resx">
+      <DependentUpon>FormLiveMock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDraw.resx">
+      <DependentUpon>FormDraw.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditor.resx">
+      <DependentUpon>FormEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFonts.resx">
+      <DependentUpon>FormFonts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLive.resx">
+      <DependentUpon>FormLive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWelcomeSplash.resx">
+      <DependentUpon>FormWelcomeSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParentMain.resx">
+      <DependentUpon>MDIParentMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AndroidClock.ttf" />
+    <None Include="Resources\CarroisGothicSC-Regular.ttf" />
+    <None Include="Resources\ComingSoon.ttf" />
+    <None Include="Resources\CutiveMono.ttf" />
+    <None Include="Resources\DancingScript-Bold.ttf" />
+    <None Include="Resources\DancingScript-Regular.ttf" />
+    <None Include="Resources\DroidSans-Bold.ttf" />
+    <None Include="Resources\DroidSans.ttf" />
+    <None Include="Resources\DroidSansFallback.ttf" />
+    <None Include="Resources\DroidSansMono.ttf" />
+    <None Include="Resources\web-background-01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\category-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\category-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Scenery\tree1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Scenery\sunsea4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Scenery\cross1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Tiles\f3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HeritageUserControl\HeritageUserControl.vbproj">
+      <Project>{3f4fdcb6-44e7-4181-9b56-c9afb51617a3}</Project>
+      <Name>HeritageUserControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
