@@ -2,15 +2,27 @@
 Heritage Media Slide Plus - A slide presentation software
 
 
-Heritage Media Slide Plus is a windows software application for slide presentation
+# About Heritage Media Slide Plus
+Heritage Media Slide Plus is a windows software application for slide presentation.
+This software was developed to provide similar functionality with EasiSlides
+The main features are
+1. Simple UI
+2. Multiuser (WLAN, LAN, WAN)
+3. Better and predictable visual output
+4. Improved and customized support for lower thirds
 
 This software makes use of the RapidChart library
 
-Usage  from source 
+# Usage  from source 
 build the solution
 modify and run the Inno Setup script in the \setup directory
 install the software
 
-Installation
+# Installation
 Download any of the stable binaries in the release section
 and install
+
+# Screen shots
+![Image description](https://github.com/edla4eva/heritage_media_slide_plus/edit/master/screenshot.jpg)
+![Image description](https://github.com/edla4eva/heritage_media_slide_plus/edit/master/screenshot2.jpg)
+![Image description](https://github.com/edla4eva/heritage_media_slide_plus/edit/master/screenshot3.jpg)
