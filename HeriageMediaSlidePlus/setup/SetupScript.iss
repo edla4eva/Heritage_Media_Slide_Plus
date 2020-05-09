@@ -39,8 +39,6 @@ Source: "..\bin\debug\bibles\ASV.mdb"; DestDir: "{app}\bibles"
 Source: "..\bin\debug\bibles\RSV.mdb"; DestDir: "{app}\bibles"
 
 ;images (C:\.....\My Documents\Heritage....\
-Source: "..\bin\debug\images\Scenery\tree1.jpg"; DestDir: "{userdocs}\{#Mydir}\images"
-
 Source: "..\bin\debug\images\hd-01.jpg"; DestDir: "{userdocs}\{#Mydir}\images"
 Source: "..\bin\debug\images\HD1920-856.jpg"; DestDir: "{userdocs}\{#Mydir}\images"
 Source: "..\bin\debug\images\HD1366x720.jpg"; DestDir: "{userdocs}\{#Mydir}\images"
