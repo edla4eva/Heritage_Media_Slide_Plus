@@ -133,9 +133,6 @@
   <data name="AndroidClock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AndroidClock.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tree1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\images\Scenery\tree1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="DroidSans_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DroidSans-Bold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

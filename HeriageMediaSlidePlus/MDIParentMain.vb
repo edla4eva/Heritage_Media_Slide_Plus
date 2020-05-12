@@ -108,7 +108,7 @@ Public Class MDIParentMain
         Me.PanelConnect.BackColor = Color.FromArgb(120, 255, 192, 192) 'refddish
 
 #If DEBUG Then
-        Me.ButtonbIbleDLL.Visible = True
+        ' Me.ButtonbIbleDLL.Visible = True
 #End If
         'TODO: Try this  Dim frm As New FormMain
         Dim scrSaver As New SplashScreen1

@@ -16,6 +16,8 @@ OutputDir="setup for HeriageMediaSlidePlus\"
 ;my custom perl code/directive
 [Code]
 #define Mydir "HeritageMediaSlidePlus"
+[InstallDelete]
+Type: files; Name: "{app}\HeriageMediaSlidePlus.exe"
 
 [Files]
 ;main program
@@ -37,6 +39,7 @@ Source: "..\bin\debug\service\A wonderful Saviour.txt"; DestDir: "{userdocs}\{#M
 Source: "..\bin\debug\bibles\KJV.mdb"; DestDir: "{app}\bibles"
 Source: "..\bin\debug\bibles\ASV.mdb"; DestDir: "{app}\bibles"
 Source: "..\bin\debug\bibles\RSV.mdb"; DestDir: "{app}\bibles"
+Source: "..\bin\debug\bibles\BBE.mdb"; DestDir: "{app}\bibles"
 
 ;images (C:\.....\My Documents\Heritage....\
 Source: "..\bin\debug\images\hd-01.jpg"; DestDir: "{userdocs}\{#Mydir}\images"

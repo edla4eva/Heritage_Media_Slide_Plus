@@ -690,7 +690,7 @@ Partial Class MDIParentMain
         Me.ButtonbIbleDLL.Name = "ButtonbIbleDLL"
         Me.ButtonbIbleDLL.Size = New System.Drawing.Size(139, 45)
         Me.ButtonbIbleDLL.TabIndex = 13
-        Me.ButtonbIbleDLL.Text = "Debug Mode Test BiblesDLL"
+        Me.ButtonbIbleDLL.Text = "Utility"
         Me.ButtonbIbleDLL.UseVisualStyleBackColor = True
         Me.ButtonbIbleDLL.Visible = False
         '

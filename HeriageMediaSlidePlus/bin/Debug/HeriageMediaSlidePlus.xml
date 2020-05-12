@@ -93,10 +93,6 @@ HeriageMediaSlidePlus
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:HeriageMediaSlidePlus.My.Resources.Resources.tree1">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
 </member><member name="T:HeriageMediaSlidePlus.My.Resources.Resources">
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.

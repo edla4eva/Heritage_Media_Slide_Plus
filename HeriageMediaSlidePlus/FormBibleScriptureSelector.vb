@@ -1,6 +1,11 @@
-﻿Public Class FormBibleScriptureSelector
+﻿Imports System.Xml
+Imports System.Xml.Xsl
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+Public Class FormBibleScriptureSelector
+    Dim xslMarkup As XDocument
+    Dim xmlTree As XElement
+    Dim newTree As XDocument = New XDocument()
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         TextBoxScripture.Text = "Genesis"
     End Sub
 
@@ -113,5 +118,115 @@
         main_sub()
 
         'prevObjSlide.slideIsScripture = False  'this will trigger an event
+    End Sub
+    'You can create an XML tree, create an XmlReader from the XML tree, create a new document, 
+    'and create an XmlWriter that will write into the new document. Then, you can invoke the XSLT transformation, 
+    'passing the XmlReader and XmlWriter to the transformation. After the transformation successfully completes, 
+    'the new XML tree is populated with the results of the transform.
+    Private Sub ButtonTransformXML_Click(sender As Object, e As EventArgs) Handles ButtonTransformXML.Click
+        'Dim xslMarkup As XDocument
+        'Dim xmlTree As XElement
+        'Dim newTree As XDocument = New XDocument()
+
+        'load from files
+        xslMarkup = XDocument.Load(USER_DIRECTORY & "\db\xsl.xsl")
+        xmlTree = XElement.Load(USER_DIRECTORY & "\db\bbe.xml")
+
+        BackgroundWorker1.RunWorkerAsync()
+
+        'Using writer As XmlWriter = newTree.CreateWriter()
+        '    ' Load the style sheet.
+        '    Dim xslt As XslCompiledTransform = New XslCompiledTransform()
+        '    xslt.Load(xslMarkup.CreateReader())
+
+        '    ' Execute the transform and output the results to a writer.
+        '    xslt.Transform(xmlTree.CreateReader(), writer)
+        'End Using
+
+        ''Console.WriteLine(newTree)
+
+        'newTree.Save(USER_DIRECTORY & "\db\bible_version.xml")
+        'TextBoxXML.Text = newTree.ToString
+        'MsgBox("Done!")
+
+
+        '#2 import to access database
+
+        '#3 Cool: Silently use inno setup to copy the database to app Path
+
+
+        'This example produces the following output:
+        '        Xml()
+
+        '<Root>
+        '  <C1>Child1 data</C1>
+        '  <C2>Child2 data</C2>
+        '</Root>
+
+    End Sub
+    ''    Dim xslMarkup As XDocument = _
+    ''    <?xml version='1.0'?>
+    ''    <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>
+    ''        <xsl:template match='/Parent'>
+    ''            <Root>
+    ''                <C1>
+    ''                    <xsl:value-of select='Child1'/>
+    ''                </C1>
+    ''                <C2>
+    ''                    <xsl:value-of select='Child2'/>
+    ''                </C2>
+    ''            </Root>
+    ''        </xsl:template>
+    ''    </xsl:stylesheet>
+
+    ''    Dim xmlTree As XElement = _
+    ''        <Parent>
+    ''            <Child1>Child1 data</Child1>
+    ''            <Child2>Child2 data</Child2>
+    ''        </Parent>
+
+    ''    Dim newTree As XDocument = New XDocument()
+
+    ''Using writer As XmlWriter = newTree.CreateWriter()
+    ''    ' Load the style sheet.
+    ''    Dim xslt As XslCompiledTransform = _
+    ''        New XslCompiledTransform()
+    ''    xslt.Load(xslMarkup.CreateReader())
+
+    ''    ' Execute the transform and output the results to a writer.
+    ''    xslt.Transform(xmlTree.CreateReader(), writer)
+    ''End Using
+
+    ''Console.WriteLine(newTree)
+
+    ''This example produces the following output:
+    ''XML
+
+    ''<Root>
+    ''  <C1>Child1 data</C1>
+    ''  <C2>Child2 data</C2>
+    ''</Root>
+
+    Private Sub BackgroundWorker1_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles BackgroundWorker1.DoWork
+        Using writer As XmlWriter = newTree.CreateWriter()
+            ' Load the style sheet.
+            Dim xslt As XslCompiledTransform = New XslCompiledTransform()
+            xslt.Load(xslMarkup.CreateReader())
+
+            ' Execute the transform and output the results to a writer.
+            xslt.Transform(xmlTree.CreateReader(), writer)
+        End Using
+
+        'Console.WriteLine(newTree)
+
+        newTree.Save(USER_DIRECTORY & "\db\bible_version.xml")
+    End Sub
+
+    Private Sub BackgroundWorker1_ProgressChanged(sender As Object, e As System.ComponentModel.ProgressChangedEventArgs) Handles BackgroundWorker1.ProgressChanged
+        ProgressBar1.Increment(5)
+    End Sub
+
+    Private Sub BackgroundWorker1_RunWorkerCompleted(sender As Object, e As System.ComponentModel.RunWorkerCompletedEventArgs) Handles BackgroundWorker1.RunWorkerCompleted
+        MsgBox("Done!")
     End Sub
 End Class

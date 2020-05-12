@@ -1711,7 +1711,10 @@ Public Class FormMain
 
     End Function
     Private Sub ListBoxBibleVersions_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBoxBibleVersions.SelectedIndexChanged
+        Dim tmpVersion As String = ""
         Try
+
+            tmpVersion = prevObjSlide.bibleVersion
             prevObjSlide.bibleVersion = ListBoxBibleVersions.SelectedItem.ToString
             Dim dIndex As Integer = 0
             If Me.ListBoxBibles.SelectedItems.Count > 0 Then dIndex = Me.ListBoxBibles.SelectedIndex 'note it
@@ -1724,8 +1727,9 @@ Public Class FormMain
             If ListBoxBibles.Items.Count > 0 Then ListBoxBibles.SelectedIndex = CInt(prevObjSlide.bibleVerse) - 1
         Catch ex As Exception
             'can cause error
+            tmpVersion = prevObjSlide.bibleVersion 'recover from error
             Me.TextBoxSearch.Text = ("Error occured!" & vbCrLf & "This error was caused because:" & ex.GetBaseException().Message)
-            logError("Error occured!" & vbCrLf & "This error was caused because:" & ex.GetBaseException().Message)
+            logError("Error occured!" & vbCrLf & "This error was caused because:" & ex.GetBaseException().ToString)
         Finally
             'can cause error
         End Try
@@ -2717,12 +2721,14 @@ Public Class FormMain
             If objSlide.scriptureStateNavDriMain(2) = True Then 'scripture
                 serialStr = "[SCRIPTURE]" & vbCrLf
                 serialStr = serialStr & objSlide.bibleBook & vbCrLf
-                serialStr = serialStr & objSlide.bibleChapter & vbCrLf                serialStr = serialStr & objSlide.bibleVerse & vbCrLf
+                serialStr = serialStr & objSlide.bibleChapter & vbCrLf
+                serialStr = serialStr & objSlide.bibleVerse & vbCrLf
                 serialStr = serialStr & objSlide.bibleVersion & vbCrLf
             Else
                 serialStr = "[SONG TITLE]" & vbCrLf
                 serialStr = serialStr & objSlide.songTitle & vbCrLf
-                serialStr = serialStr & "[AUTHOUR]" & vbCrLf                serialStr = serialStr & objSlide.songAuthour & vbCrLf
+                serialStr = serialStr & "[AUTHOUR]" & vbCrLf
+                serialStr = serialStr & objSlide.songAuthour & vbCrLf
             End If
 
             'prevObjSlide.Array2Str()
@@ -2780,6 +2786,10 @@ Public Class FormMain
 
 
     Sub addLayouts()
+        'vers number at beginning to text
+        'reference on top centered
+        'reference on top left
+        'ReferenceEquals color
         Dim btn As Object
         For i = 0 To 10
             btn = New Button
