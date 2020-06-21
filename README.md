@@ -23,6 +23,6 @@ Download any of the stable binaries in the release section
 and install
 
 # Screen shots
-![Image description](https://github.com/edla4eva/heritage_media_slide_plus/edit/master/screenshot.jpg)
-![Image description](https://github.com/edla4eva/heritage_media_slide_plus/edit/master/screenshot2.jpg)
-![Image description](https://github.com/edla4eva/heritage_media_slide_plus/edit/master/screenshot3.jpg)
+![Screenshot 1](https://github.com/edla4eva/heritage_media_slide_plus/master/screenshot.jpg)
+![Screenshot 2](https://github.com/edla4eva/heritage_media_slide_plus/master/screenshot2.jpg)
+![Screenshot 3](https://github.com/edla4eva/heritage_media_slide_plus/master/screenshot3.jpg)
